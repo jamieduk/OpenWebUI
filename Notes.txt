@@ -1,0 +1,47 @@
+
+OpenWeb-UI
+
+
+Installation
+
+./setup.sh
+
+./start.sh
+
+
+Then go To
+http://localhost:3020
+
+
+Python
+Requires Python 3.12.
+
+
+function venv() {
+    #python3 -m venv venv
+    python3.12 -m venv venv
+    PYTHON_PATH=$(which python3.12)
+    echo "alias python='$PYTHON_PATH'" >> venv/bin/activate
+    source venv/bin/activate
+    echo "Virtual Environment setup and ready!"
+    echo ""
+}
+
+
+venv
+pip install open-webui
+open-webui serve
+
+Then open http://localhost:3020
+
+
+
+More On 
+https://github.com/open-webui/open-webui
+
+
+
+
+
+
+
